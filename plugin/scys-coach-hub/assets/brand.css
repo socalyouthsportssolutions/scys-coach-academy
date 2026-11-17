@@ -1,0 +1,292 @@
+/*!
+ * SCYS Coach Academy â€” brand layer
+ * SoCal Youth Sports Â· "Redesigning Youth Sports"
+ *
+ * Loads AFTER hub.css and only re-skins it. Layout, print and mentoring
+ * field-card rules stay in hub.css, so this file can be removed to roll back.
+ *
+ * Brand book: teal #2c90a2 (60) Â· gray #a6a6a6 (30) Â· yellow #fff619 (10, CTAs only)
+ *
+ * Accessibility notes (WCAG 2.2 AA):
+ *  - Brand teal #2c90a2 is 3.74:1 on white: OK for fills, borders, icons and
+ *    large/bold text, NOT for body-size text. Text uses --scys-teal-700 (7.2:1).
+ *  - Brand gray #a6a6a6 is 2.43:1 on white: decoration and borders only.
+ *    Muted text uses --scys-slate-600 (5.6:1).
+ *  - Yellow is only ever a background behind dark ink (13.2:1).
+ */
+
+#scys-hub {
+  /* ---- Brand tokens ---------------------------------------------------- */
+  --scys-teal: #2c90a2;          /* brand primary */
+  --scys-teal-50: #eef7f9;
+  --scys-teal-100: #d6edf1;
+  --scys-teal-200: #a9d6df;
+  --scys-teal-700: #17606c;      /* accessible text teal */
+  --scys-teal-900: #0d3d45;      /* header / deep surfaces */
+  --scys-gray: #a6a6a6;          /* brand secondary */
+  --scys-gray-100: #f1f2f2;
+  --scys-gray-200: #e2e4e4;
+  --scys-slate-600: #5b6a6c;
+  --scys-ink: #0f2a2f;
+  --scys-yellow: #fff619;        /* CTA only */
+  --scys-yellow-press: #f2e600;
+  --scys-success: #1d7a52;
+  --scys-success-50: #e8f5ee;
+  --scys-warn-50: #fff8d6;
+  --scys-danger: #a3283a;
+  --scys-danger-50: #fdeef0;
+
+  --scys-radius-sm: 8px;
+  --scys-radius: 14px;
+  --scys-radius-lg: 20px;
+  --scys-shadow-1: 0 1px 2px rgba(13, 61, 69, .06), 0 1px 1px rgba(13, 61, 69, .04);
+  --scys-shadow-2: 0 10px 30px -12px rgba(13, 61, 69, .28);
+  --scys-ease: cubic-bezier(.2, .7, .2, 1);
+
+  /* Inherit the site's typography when the theme provides it. */
+  --scys-font-body: var(--wp--preset--font-family--body, var(--wp--preset--font-family--system-font, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif));
+  --scys-font-display: var(--wp--preset--font-family--heading, "Montserrat", "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif);
+
+  /* ---- Map brand onto the base hub tokens ------------------------------ */
+  --hub-bg: #f6f8f8;
+  --hub-paper: #fff;
+  --hub-ink: var(--scys-ink);
+  --hub-muted: var(--scys-slate-600);
+  --hub-line: var(--scys-gray-200);
+  --hub-teal: var(--scys-teal);
+  --hub-dark: var(--scys-teal-700);
+  --hub-soft: var(--scys-teal-50);
+  --hub-warm: var(--scys-warn-50);
+  --hub-red: var(--scys-danger);
+
+  font-family: var(--scys-font-body);
+  border-color: var(--scys-gray-200);
+  border-radius: var(--scys-radius-lg);
+  box-shadow: var(--scys-shadow-2);
+}
+
+/* ---- Typography -------------------------------------------------------- */
+#scys-hub h1,
+#scys-hub h2,
+#scys-hub .hub-brand { font-family: var(--scys-font-display); color: var(--scys-ink); }
+#scys-hub h1 { font-weight: 800; letter-spacing: -.02em; }
+#scys-hub h2 { font-weight: 750; letter-spacing: -.01em; }
+#scys-hub .hub-kicker {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: var(--scys-teal-700); font-weight: 800; letter-spacing: .14em;
+}
+#scys-hub .hub-kicker::before {
+  content: ""; width: 18px; height: 3px; border-radius: 2px;
+  background: var(--scys-teal);
+}
+#scys-hub a { color: var(--scys-teal-700); text-decoration-thickness: 2px; text-decoration-color: var(--scys-teal-200); }
+#scys-hub a:hover { text-decoration-color: currentColor; }
+
+/* ---- Focus: dark ring + yellow halo, visible on teal and on white -------- */
+#scys-hub button:focus-visible,
+#scys-hub a:focus-visible,
+#scys-hub input:focus-visible,
+#scys-hub select:focus-visible,
+#scys-hub textarea:focus-visible,
+#scys-hub summary:focus-visible {
+  outline: 3px solid var(--scys-ink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px var(--scys-yellow);
+}
+
+/* ---- Header: deep teal band with a faint pitch motif -------------------- */
+#scys-hub .hub-top {
+  position: relative;
+  background:
+    radial-gradient(circle at 88% 50%, transparent 0 58px, rgba(255,255,255,.09) 58px 60px, transparent 60px),
+    linear-gradient(90deg, transparent calc(88% - 1px), rgba(255,255,255,.09) calc(88% - 1px) calc(88% + 1px), transparent calc(88% + 1px)),
+    linear-gradient(120deg, var(--scys-teal-900) 0%, #125460 55%, var(--scys-teal) 140%);
+  border-bottom: 0;
+  color: #fff;
+  padding: 20px 28px;
+}
+#scys-hub .hub-top::after { /* thin brand stripe */
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px;
+  background: linear-gradient(90deg, var(--scys-teal) 0 60%, var(--scys-gray) 60% 90%, var(--scys-yellow) 90%);
+}
+#scys-hub .hub-top .hub-brand { color: #fff; font-size: 19px; font-weight: 800; letter-spacing: -.01em; }
+#scys-hub .hub-top .hub-tagline { color: rgba(255,255,255,.78); }
+#scys-hub .hub-top .hub-identity { color: rgba(255,255,255,.9); }
+#scys-hub .hub-top a { color: #fff; text-decoration-color: rgba(255,255,255,.45); }
+
+/* Logo: set --hub-logo (url) from PHP; falls back to the text mark. */
+#scys-hub .hub-mark {
+  background: #fff; color: var(--scys-teal-900);
+  border-radius: 12px; min-width: 48px; height: 48px;
+  display: grid; place-items: center; letter-spacing: .08em;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.18);
+}
+#scys-hub[data-has-logo] .hub-mark {
+  font-size: 0; color: transparent; width: 52px; height: 52px; padding: 0;
+  background: #fff var(--hub-logo) center / 82% auto no-repeat;
+  border-radius: 50%;
+}
+
+/* ---- Preview banner ----------------------------------------------------- */
+#scys-hub .hub-demo { background: var(--scys-warn-50); border-bottom: 1px solid #f0e3a0; color: #4d4210; }
+
+/* ---- Sidebar navigation ------------------------------------------------- */
+#scys-hub .hub-sidebar { background: #fff; border-right-color: var(--scys-gray-200); }
+#scys-hub .hub-nav button {
+  position: relative; color: var(--scys-slate-600); border-radius: 10px;
+  transition: background-color .15s var(--scys-ease), color .15s var(--scys-ease);
+}
+#scys-hub .hub-nav button:hover { background: var(--scys-gray-100); color: var(--scys-ink); }
+#scys-hub .hub-nav button[aria-current=page] {
+  background: var(--scys-teal-700); color: #fff; font-weight: 750;
+  box-shadow: var(--scys-shadow-1);
+}
+#scys-hub .hub-nav button[aria-current=page]::before {
+  content: ""; position: absolute; left: -13px; top: 10px; bottom: 10px; width: 4px;
+  border-radius: 0 3px 3px 0; background: var(--scys-yellow);
+}
+#scys-hub .hub-nav-symbol { color: var(--scys-teal); }
+#scys-hub .hub-nav button[aria-current=page] .hub-nav-symbol { color: var(--scys-yellow); }
+#scys-hub .hub-sidebar-foot { border-top: 1px dashed var(--scys-gray); padding-top: 16px; }
+
+/* ---- Surfaces ----------------------------------------------------------- */
+#scys-hub main { background: var(--hub-bg); }
+#scys-hub .hub-card {
+  border-color: var(--scys-gray-200); border-radius: var(--scys-radius);
+  box-shadow: var(--scys-shadow-1);
+}
+/* Feature card (first card of the dashboard column) gets a brand top edge. */
+#scys-hub .hub-grid > .hub-stack:first-child > .hub-card:first-child,
+#scys-hub .hub-grid > .hub-card:first-child { border-top: 4px solid var(--scys-teal); }
+
+#scys-hub .hub-resource-grid .hub-card {
+  transition: transform .18s var(--scys-ease), box-shadow .18s var(--scys-ease), border-color .18s;
+}
+#scys-hub .hub-resource-grid .hub-card:hover {
+  transform: translateY(-2px); box-shadow: var(--scys-shadow-2); border-color: var(--scys-teal-200);
+}
+#scys-hub .hub-resource-grid .hub-card h2 { font-size: 20px; }
+
+/* ---- Buttons: yellow = the one primary action (10%) ---------------------- */
+#scys-hub .hub-button {
+  border-radius: 999px; padding: 11px 20px; font-weight: 750;
+  border: 2px solid var(--scys-teal-200); color: var(--scys-teal-700); background: #fff;
+  transition: background-color .15s var(--scys-ease), border-color .15s, transform .1s;
+}
+#scys-hub .hub-button:hover { border-color: var(--scys-teal); background: var(--scys-teal-50); }
+#scys-hub .hub-button:active { transform: translateY(1px); }
+#scys-hub .hub-button-primary {
+  background: var(--scys-yellow); border-color: var(--scys-yellow); color: var(--scys-ink);
+  box-shadow: 0 2px 0 var(--scys-teal-900);
+}
+#scys-hub .hub-button-primary:hover { background: var(--scys-yellow-press); border-color: var(--scys-yellow-press); }
+#scys-hub .hub-link-button { color: var(--scys-teal-700); }
+
+/* ---- Chips, numbers, progress ------------------------------------------ */
+#scys-hub .hub-chip {
+  background: var(--scys-teal-50); color: var(--scys-teal-700);
+  border: 1px solid var(--scys-teal-100); border-radius: 999px;
+  padding: 3px 10px; letter-spacing: .03em;
+}
+#scys-hub .hub-chip-warm { background: var(--scys-warn-50); border-color: #f0e3a0; color: #5b4c0c; }
+
+#scys-hub .hub-number { background: #fff; color: var(--scys-teal-700); border: 2px solid var(--scys-teal-200); }
+#scys-hub .hub-number.is-done { background: var(--scys-teal); border-color: var(--scys-teal); color: #fff; }
+
+#scys-hub progress { height: 10px; background: var(--scys-gray-100); }
+#scys-hub progress::-webkit-progress-bar { background: var(--scys-gray-100); border-radius: 10px; }
+#scys-hub progress::-webkit-progress-value { background: linear-gradient(90deg, var(--scys-teal) 0 calc(100% - 6px), var(--scys-yellow) calc(100% - 6px)); border-radius: 10px; }
+#scys-hub progress::-moz-progress-bar { background: linear-gradient(90deg, var(--scys-teal) 0 calc(100% - 6px), var(--scys-yellow) calc(100% - 6px)); border-radius: 10px; }
+
+#scys-hub .hub-list > li,
+#scys-hub .hub-row-link { border-top-color: var(--scys-gray-200); }
+#scys-hub .hub-row-link:hover strong,
+#scys-hub .hub-list-title:hover { color: var(--scys-teal-700); }
+
+/* ---- Forms -------------------------------------------------------------- */
+#scys-hub input[type=search],
+#scys-hub input[type=text],
+#scys-hub input[type=date],
+#scys-hub input[type=datetime-local],
+#scys-hub input[type=url],
+#scys-hub select,
+#scys-hub textarea {
+  border: 1.5px solid #7d8b8d; border-radius: 10px; background: #fff;
+  transition: border-color .15s, box-shadow .15s;
+}
+#scys-hub input:hover, #scys-hub select:hover, #scys-hub textarea:hover { border-color: var(--scys-teal-700); }
+#scys-hub input[type=checkbox], #scys-hub input[type=radio] { accent-color: var(--scys-teal-700); }
+
+/* ---- Lessons + quizzes -------------------------------------------------- */
+#scys-hub .hub-reading .hub-card { border-top: 4px solid var(--scys-teal); }
+#scys-hub .hub-reading h3 { color: var(--scys-teal-700); }
+#scys-hub .hub-note {
+  background: var(--scys-teal-50); border-left: 4px solid var(--scys-teal);
+  border-radius: 0 var(--scys-radius-sm) var(--scys-radius-sm) 0;
+}
+#scys-hub .hub-figure img { border: 1px solid var(--scys-gray-200); border-radius: 10px; }
+
+#scys-hub .hub-option {
+  border: 1.5px solid var(--scys-gray-200); border-radius: 12px; background: #fff;
+  transition: border-color .15s, background-color .15s;
+}
+#scys-hub .hub-option:hover { border-color: var(--scys-teal-200); background: var(--scys-teal-50); }
+#scys-hub .hub-option:has(input:checked) { border-color: var(--scys-teal); background: var(--scys-teal-50); box-shadow: inset 4px 0 0 var(--scys-teal); }
+
+#scys-hub .hub-feedback { background: var(--scys-success-50); border-left: 4px solid var(--scys-success); border-radius: 0 10px 10px 0; }
+#scys-hub .hub-feedback-wrong { background: var(--scys-warn-50); border-left-color: #c9a400; }
+#scys-hub .hub-feedback-error,
+#scys-hub .hub-status[data-error=true] { background: var(--scys-danger-50); color: var(--scys-danger); border-left: 4px solid var(--scys-danger); }
+#scys-hub .hub-status { border-radius: 10px; border-left: 4px solid var(--scys-teal); background: var(--scys-teal-50); }
+
+/* ---- Mentoring ---------------------------------------------------------- */
+#scys-hub .hub-support-form details { border: 1px solid var(--scys-gray-200); border-radius: 12px; padding: 12px 16px; background: #fff; }
+#scys-hub .hub-support-form details[open] { border-color: var(--scys-teal-200); }
+#scys-hub .hub-stage h3 { display: flex; align-items: center; gap: 8px; }
+#scys-hub .hub-stage h3::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--scys-teal); flex: none; }
+
+/* ---- Signed-out / not-enrolled gate (rendered by PHP) ------------------- */
+.scys-gate {
+  --scys-teal: #2c90a2; --scys-teal-700: #17606c; --scys-teal-900: #0d3d45; --scys-ink: #0f2a2f; --scys-yellow: #fff619;
+  max-width: 640px; margin: 32px auto; padding: 40px 36px; border-radius: 20px; text-align: center;
+  color: #fff; font-family: var(--wp--preset--font-family--body, system-ui, -apple-system, "Segoe UI", sans-serif);
+  background:
+    radial-gradient(circle at 50% 120%, transparent 0 90px, rgba(255,255,255,.1) 90px 92px, transparent 92px),
+    linear-gradient(135deg, var(--scys-teal-900), var(--scys-teal-700));
+  box-shadow: 0 18px 40px -18px rgba(13,61,69,.55);
+}
+.scys-gate img { width: 76px; height: 76px; border-radius: 50%; background: #fff; padding: 6px; margin: 0 auto 14px; display: block; }
+.scys-gate h2 { color: #fff; margin: 0 0 8px; font-size: 28px; font-weight: 800; }
+.scys-gate p { color: rgba(255,255,255,.9); margin: 0 0 20px; }
+.scys-gate .scys-gate-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.scys-gate a { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 22px; border-radius: 999px; font-weight: 750; text-decoration: none; }
+.scys-gate a.scys-gate-primary { background: var(--scys-yellow); color: var(--scys-ink); }
+.scys-gate a.scys-gate-secondary { color: #fff; border: 2px solid rgba(255,255,255,.55); }
+.scys-gate a:focus-visible { outline: 3px solid var(--scys-ink); outline-offset: 2px; box-shadow: 0 0 0 6px var(--scys-yellow); }
+
+/* ---- Responsive tweaks -------------------------------------------------- */
+@media (max-width: 700px) {
+  #scys-hub { border-radius: 0; box-shadow: none; }
+  #scys-hub .hub-top { padding: 16px 18px; }
+  #scys-hub .hub-nav { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--scys-teal-700) var(--scys-gray-100); -webkit-overflow-scrolling: touch; }
+  #scys-hub .hub-nav::-webkit-scrollbar { height: 6px; }
+  #scys-hub .hub-nav::-webkit-scrollbar-thumb { background: var(--scys-teal-700); border-radius: 3px; }
+  #scys-hub .hub-nav button { white-space: nowrap; flex: none; }
+  #scys-hub .hub-nav button[aria-current=page]::before { left: 10px; right: 10px; top: auto; bottom: 3px; width: auto; height: 3px; border-radius: 3px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #scys-hub *, .scys-gate * { transition: none !important; }
+  #scys-hub .hub-resource-grid .hub-card:hover { transform: none; }
+}
+
+@media (forced-colors: active) {
+  #scys-hub .hub-button-primary { border: 2px solid ButtonText; }
+  #scys-hub .hub-nav button[aria-current=page] { outline: 2px solid Highlight; }
+}
+
+@media print {
+  #scys-hub { box-shadow: none; }
+  #scys-hub .hub-top { background: none; color: #000; }
+  #scys-hub .hub-top::after { display: none; }
+}

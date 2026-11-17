@@ -1,0 +1,6 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+return json_decode( <<<'SCYS_JSON'
+{"id":"piggy-middle","title":"Piggy in the Middle / Hot Potato","ages":["U8","U10","U12"],"themes":["passing","support","defending"],"minutes":"4–5 minute rounds (source)","players":"4 attackers and 1 defender per game (source)","equipment":"Cones with balls on top; proposed spare balls and boundary cones.","setup":"Split field into halves with target cones, following source diagram. Dimensions unspecified.","instructions":["Four players keep the ball away from a defender.","Move the defender to create a chance to knock a ball off a cone for a goal.","The defender wins possession and attacks opposite targets for three points.","Source prohibits passes over the defender’s head."],"support":["Proposed option: Begin with ball in hand if needed (source suggestion); agree switch to feet."],"challenge":["Proposed option: Move to 3v2 when suitable (source progression)."],"observe":["Does each attacker offer an accessible passing route?","Does the defender respond to space or just guard a target?"],"sourceRefs":[{"sourceId":"guide-8","page":37}],"adaptationsProposed":true}
+SCYS_JSON
+, true, 512, JSON_THROW_ON_ERROR );

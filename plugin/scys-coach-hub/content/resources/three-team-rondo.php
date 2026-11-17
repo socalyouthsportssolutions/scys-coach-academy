@@ -1,0 +1,6 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+return json_decode( <<<'SCYS_JSON'
+{"id":"three-team-rondo","title":"Three-team Rondo","ages":["U12","U14"],"themes":["switching","teamwork","transition"],"minutes":"Not specified; proposed short rounds agreed with coach","players":"3 teams; sizes unspecified","equipment":"Proposed: ball, boundary cones, three colours of pinnies.","setup":"Attacking teams in separate halves; defenders start centrally.","instructions":["Defenders enter one attacking half.","Attackers combine three passes then switch to other team for a point.","Defenders steal and combine once for one point.","Defenders return ball to their start area for three points."],"support":["Proposed option: Reduce required passes before switch; proposed simplification."],"challenge":["Proposed option: Increase passing requirement or defender numbers (source progressions)."],"observe":["Can child create a passing route before switch?","How do teams respond when possession changes?"],"sourceRefs":[{"sourceId":"guide-8","page":71}],"adaptationsProposed":true}
+SCYS_JSON
+, true, 512, JSON_THROW_ON_ERROR );

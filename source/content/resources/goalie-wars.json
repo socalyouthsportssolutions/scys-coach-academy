@@ -1,0 +1,41 @@
+{
+  "id": "goalie-wars",
+  "title": "Goalie Wars",
+  "ages": [
+    "U10",
+    "U12",
+    "U14"
+  ],
+  "themes": [
+    "goalkeeping",
+    "distribution",
+    "finishing"
+  ],
+  "minutes": "4–5 minute rounds (source)",
+  "players": "2 teams; one active goalkeeper at each end (source)",
+  "equipment": "Goals and balls; proposed halfway cones and safe waiting areas.",
+  "setup": "Two halves, one goal each. Adjust distance and shot type with lead coach; dimensions unspecified.",
+  "instructions": [
+    "Keepers try to score from their own half.",
+    "Source points: ground kick 1, dropkick 2, throw/bowl 3, roll 5. Use only suitable methods agreed by lead coach.",
+    "Scorer stays in; after a miss or save the next player enters.",
+    "A save or opponent miss allows a new attack."
+  ],
+  "support": [
+    "Proposed option: Start with controlled rolling and suitable distance; proposed simplification."
+  ],
+  "challenge": [
+    "Proposed option: Add playable rebounds when safe and understood (source progression)."
+  ],
+  "observe": [
+    "Can each child participate without a long queue?",
+    "Does keeper prepare to receive as well as distribute?"
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "guide-8",
+      "page": 38
+    }
+  ],
+  "adaptationsProposed": true
+}

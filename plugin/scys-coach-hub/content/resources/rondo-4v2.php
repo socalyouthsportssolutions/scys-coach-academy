@@ -1,0 +1,6 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+return json_decode( <<<'SCYS_JSON'
+{"id":"rondo-4v2","title":"4v2 Rondo","ages":["U12","U14"],"themes":["passing","support","stealing"],"minutes":"Not specified; proposed short rounds agreed with coach","players":"4 attackers and 2 defenders (source)","equipment":"Proposed: ball, cones, pinnies, counterattack targets.","setup":"Mark area and counterattack targets with lead coach; size unspecified.","instructions":["Attackers keep possession; three passes earn one point.","Passing between both defenders earns three points.","Defenders win ball and counterattack: connected pass earns one, scoring earns two.","Agree target locations and rotate roles."],"support":["Proposed option: Give a receiver a brief protected first contact; proposed rule."],"challenge":["Proposed option: Use guide’s 1-or-4-touch option for a player ready for it."],"observe":["Does a player offer support away from pressure?","Can defenders cooperate rather than both chase?"],"sourceRefs":[{"sourceId":"guide-8","page":69}],"adaptationsProposed":true}
+SCYS_JSON
+, true, 512, JSON_THROW_ON_ERROR );

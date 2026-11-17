@@ -1,0 +1,577 @@
+{
+  "schema_version": 1,
+  "project": "SCYS Coach Academy",
+  "version": "0.3.1",
+  "source_archive": "SCYS-Coach-Mentoring-Mike-Review-0.3.1.zip",
+  "source_archive_sha256": "c2918e8bfe1b6545a29d4e80b0595f769ed9db73c5be991f12bd280231eb69f4",
+  "source_root": "developer/hub/",
+  "preservation": "All imported source and review documents retain their original file bytes.",
+  "archive_checksums_verified": 183,
+  "files": [
+    {
+      "path": "MENTORING-HANDOFF.md",
+      "size_bytes": 11956,
+      "sha256": "a584ec15d21f0991ad15f8fb148f9e54fde13c6596005d133f49447b21480571"
+    },
+    {
+      "path": "MENTORING-IMPLEMENTATION.md",
+      "size_bytes": 1043,
+      "sha256": "60ad387ebc2ca3bfd5ad7a41924225c5730180b7bff0b7cad63dfd284cc7ea5c"
+    },
+    {
+      "path": "MIKE-MODULAR-HANDOFF.md",
+      "size_bytes": 5562,
+      "sha256": "540d8ddbd19d0b79582143ecd79797ba5fcea5748f0ac29ca0d08f4d9d07316e"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3182,
+      "sha256": "446ee4168eabf146ead3cb9f45f903488b9472564bf3415136ef574eea373159"
+    },
+    {
+      "path": "STYLE-INTEGRATION-NOTES.md",
+      "size_bytes": 6650,
+      "sha256": "1b9578ebae3d19b0d6ff9f163d2a706b943e35378b44c5e8dd770fb6b8c32e1f"
+    },
+    {
+      "path": "WORDPRESS-STAGING.md",
+      "size_bytes": 8850,
+      "sha256": "cc420a4293ff14ede11bd2f48660f6d33e32bf7784b0b8243d5f22273546ced6"
+    },
+    {
+      "path": "build.py",
+      "size_bytes": 4793,
+      "sha256": "68081c15aaaae9e137964994c2b35da18d5cdb3bd4cd051e8f97088a8e524fba"
+    },
+    {
+      "path": "docs/review/CLAUDE-REVIEW.md",
+      "size_bytes": 10263,
+      "sha256": "54a741ea1329b7dea9928894ca8c1b2c32220e25810e8c245814e154a1fd4ad5"
+    },
+    {
+      "path": "docs/review/CONTENT-REVIEW.html",
+      "size_bytes": 24075,
+      "sha256": "d6463bddaec007cb07b1957eefad55946cc25a888fafc10cf06c5c1fed21bbbd"
+    },
+    {
+      "path": "docs/review/REVIEW-ADDENDUM.md",
+      "size_bytes": 13457,
+      "sha256": "351e5debd3ee1078e91f9d8de5ae822d1c419916c1c48230aa41b4d7044aa5d1"
+    },
+    {
+      "path": "docs/review/STYLE-GUIDE.html",
+      "size_bytes": 123157,
+      "sha256": "1f0fc9456f8dc1e7f2b608d0bf8983c697c99af7bab70a0c96ffde71114a7c68"
+    },
+    {
+      "path": "docs/review/STYLE-GUIDE.md",
+      "size_bytes": 24197,
+      "sha256": "4c752f1853f2e1e04a1518c1079ebf0ac105643c1eb3e852ed62e2ddf5ab4ea8"
+    },
+    {
+      "path": "docs/review/STYLE-INTEGRATION-NOTES.md",
+      "size_bytes": 6650,
+      "sha256": "1b9578ebae3d19b0d6ff9f163d2a706b943e35378b44c5e8dd770fb6b8c32e1f"
+    },
+    {
+      "path": "plugin/scys-coach-hub/assets/brand.css",
+      "size_bytes": 15344,
+      "sha256": "708e777fa5dc2b1f1b00f3ae4fcb49d308af2fdfa1290495fd6bbf3b98a12b58"
+    },
+    {
+      "path": "plugin/scys-coach-hub/assets/hub.css",
+      "size_bytes": 13030,
+      "sha256": "b4e8d5a8b481c5794d0b920b99c9e94dc92d671c3e0e7a8dabe3736fe7847618"
+    },
+    {
+      "path": "plugin/scys-coach-hub/assets/hub.js",
+      "size_bytes": 34340,
+      "sha256": "11891be8eb61cc0abd4c1d3589114a67cf19803953a9d71ede6f977ffe55c8e5"
+    },
+    {
+      "path": "plugin/scys-coach-hub/assets/mentoring.js",
+      "size_bytes": 20983,
+      "sha256": "5f1087c39526a6c051161392fb747b7fa42bc94fa265edd6c3c70c872c2f7adb"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/index.php",
+      "size_bytes": 21685,
+      "sha256": "012116a87a55fd94d859ceec8c8a0bb1a682c067d6b4a0d17db10a555641b20f"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/adapt-the-challenge.php",
+      "size_bytes": 3839,
+      "sha256": "e4d7c28296afd6ecfd64af7398d1c43421a6e36edb9233a1d28c3287da4d6ec3"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/build-a-session.php",
+      "size_bytes": 3958,
+      "sha256": "cfd0d900ef9b36192f34c156dd7fbac2fdbc1656f42e30265301e95882c88dc8"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/enter-their-world.php",
+      "size_bytes": 3829,
+      "sha256": "b18479b87e2d58abc0af33b00dbbf34e63f7f8972105c5fd44f03cff9b7462cb"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/mentoring-after.php",
+      "size_bytes": 2753,
+      "sha256": "0bf535a3a103ee42b54245e5c0a06d705cc6035b833626eee61c7344bee9cba9"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/mentoring-before.php",
+      "size_bytes": 2903,
+      "sha256": "f9b7e17dbae30775601363fa193f77f8e14fe9e852215d1a58bdf986969281ba"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/mentoring-games.php",
+      "size_bytes": 4133,
+      "sha256": "3cce4d3184886b44bd3a1349c95c7ed7fe0d7234a5751c3efd0de9a757af3a14"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/mentoring-methods.php",
+      "size_bytes": 3013,
+      "sha256": "6756516b4b556cdb1ac34e15245807c426a0846f54dfb227b4c3c4976217285b"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/mentoring-practice.php",
+      "size_bytes": 3339,
+      "sha256": "ef1f347569154922085db89423b1b1bf93b6ef2772bf88103dad823fc63553fe"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/mentoring-records.php",
+      "size_bytes": 3819,
+      "sha256": "2b3266e537da778850261d71812fdeed82b75dd46a42d35445cd84fb10b28147"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/mentoring-research.php",
+      "size_bytes": 4032,
+      "sha256": "bc526b9901806364dd2d6fe1164610d7671b12990282e9d1b92f94509a01dcaf"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/reflect-and-develop.php",
+      "size_bytes": 4024,
+      "sha256": "410185c32077718d80637d2b67214c338bc7d77a4b99faa6e6f21e85b4e98105"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/volunteer-assist.php",
+      "size_bytes": 4052,
+      "sha256": "4a0d47cbc934a4a4ce79649d3925008f8495cb311e9749d3b769c939cd7d2dd6"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/lessons/why-we-coach.php",
+      "size_bytes": 3858,
+      "sha256": "50eda3cb7466c37fbceec579b1fe761b3533b5f3143dbfd0de568485f32e2190"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/media/child-centric.php",
+      "size_bytes": 189554,
+      "sha256": "e6df4aa506e96bee950cb466c6faa6f0e38ef6f4168cdd8d11de223cb112e23b"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/media/environment.php",
+      "size_bytes": 179772,
+      "sha256": "3f90465bf02f4a0ed0d5faf03fe44a81aa9d70be7f597b3838b87a612cb88ffe"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/media/reflection.php",
+      "size_bytes": 192475,
+      "sha256": "9504c30a8de333432e6d47d039736b4e7255edc148b0c8bc8f7978bc0e5444d5"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/media/session.php",
+      "size_bytes": 144096,
+      "sha256": "1242c882a9f9ec71e57369df4455ee7b8ef94f6ec203ee5c79f2397e52623643"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/media/sharks.php",
+      "size_bytes": 205531,
+      "sha256": "900a51aec62a279210a6ea3ac9f6ebc250a6949c7182530986c0f2dc64e3b976"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/media/spectrum.php",
+      "size_bytes": 243389,
+      "sha256": "e77c9e34d10d65e11638734842b2b0b43e5efae3c86e4798dca4b14105dc4647"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/build-up.php",
+      "size_bytes": 1067,
+      "sha256": "1cb63f01f043c887a2a93f281550c32b1e0435a85bedb522b2cedd800c925a10"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/cops-robbers.php",
+      "size_bytes": 1147,
+      "sha256": "d7d41d6f81a9068bfd3c88fb1235350470af23b45c813f2b623e61be631fbfb3"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/decisions.php",
+      "size_bytes": 1158,
+      "sha256": "4f85dd1774a08d738b37c00a6ddb5426e49e0d8f2e0789cfc8ce58c0ba2da12b"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/goalie-wars.php",
+      "size_bytes": 1227,
+      "sha256": "490d93f9bacd7a249b2f6898ded9ba9b6d64a1570712f82ed09cff1154b287c3"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/hide-seek.php",
+      "size_bytes": 1021,
+      "sha256": "b3e0496e74e7012894c8d8d81c9ac780797d6fdd8e767afec574e0adb391bb9f"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/home-away.php",
+      "size_bytes": 1004,
+      "sha256": "08d49d716e27dbf0552a9a0c932e8191981709fd0fedbe7ace325a9a717c23bd"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/nano-1v1.php",
+      "size_bytes": 1043,
+      "sha256": "cb67a519671b54de63b129b98863f8d16f32c49b6396da6cf0f4d318a952444d"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/piggy-middle.php",
+      "size_bytes": 1209,
+      "sha256": "0ec9af9090caf20fdeb248485f4779c8c742ec89c42abe996b5f1ec105c4673f"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/risky-business.php",
+      "size_bytes": 1116,
+      "sha256": "749400f0bf8e8a77dd7b8cd5a88d96aaa0782089b5d08bf9133c7faadac86a0d"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/rondo-4v2.php",
+      "size_bytes": 1123,
+      "sha256": "4e541270db0fe5ce729cd197a495b18bdb9f1dfb972fd0f807937ff8836db78a"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/rondo-switch.php",
+      "size_bytes": 1079,
+      "sha256": "47000c5dbd1b6069811b858e3f0fa30735170a684e75e483a317670e3f6bb76f"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/score-move.php",
+      "size_bytes": 1087,
+      "sha256": "f407eb0eea60398f234811567e21ee742ee7448d1fd893dc94227f785f869d16"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/sharks-surfers.php",
+      "size_bytes": 1175,
+      "sha256": "dd9a565d2ae21a528afd807c19e0b9da28e63d4cc70842e22652c7c5523652ec"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/soccer-tag.php",
+      "size_bytes": 1072,
+      "sha256": "df912c3bc6a2cd38e56cf00dec5da49d0cb4cf98d6d121c06f18c27b750e6547"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/three-team-rondo.php",
+      "size_bytes": 1118,
+      "sha256": "085ea5a4f73ea710ec93a1c7ad70aa6d9c95c5fa400b552b5795d8967af783f1"
+    },
+    {
+      "path": "plugin/scys-coach-hub/content/resources/waves.php",
+      "size_bytes": 1163,
+      "sha256": "eccd9f93ad1df13cb783e6faecf011fa782bd96160124c9c7aedcef0e5596538"
+    },
+    {
+      "path": "plugin/scys-coach-hub/includes/content-store.php",
+      "size_bytes": 12911,
+      "sha256": "893fd39ab2a6e5ec0feceef9a1d2e96ec5b1d815c0f1c043c25d121055febe0f"
+    },
+    {
+      "path": "plugin/scys-coach-hub/includes/mentoring-store.php",
+      "size_bytes": 21006,
+      "sha256": "aea4fa1cc7b8629fcf37174415e6a284d05a489f5dd02efecf542ed83171988f"
+    },
+    {
+      "path": "plugin/scys-coach-hub/includes/privacy.php",
+      "size_bytes": 6738,
+      "sha256": "0a5f68a9ea5db3752c0e40c9cc48af16c093087d1c65a45d3da9b5c6fe7fe238"
+    },
+    {
+      "path": "plugin/scys-coach-hub/readme.txt",
+      "size_bytes": 3543,
+      "sha256": "0953b1c4ebd664c979222268be2f32032c6cbfaddc7eccf81e3cd68444453ad2"
+    },
+    {
+      "path": "plugin/scys-coach-hub/scys-coach-hub.php",
+      "size_bytes": 23858,
+      "sha256": "938c9a7bbd18cbbc72bb85899184c3c07a6f436e926b281eccbfaf8bd06f1d09"
+    },
+    {
+      "path": "plugin/scys-coach-hub/uninstall.php",
+      "size_bytes": 1545,
+      "sha256": "3835b8658166abfeeb82e6c39de35ed245d2314ba7bbed0a7fe3ff2771120988"
+    },
+    {
+      "path": "source/add-mentoring.py",
+      "size_bytes": 20709,
+      "sha256": "fb74319f8d7f69dd32b27a69f0ce0a2281b730bfc9ad361c487d3d7e46ea3ed5"
+    },
+    {
+      "path": "source/catalogue.json",
+      "size_bytes": 30892,
+      "sha256": "41a35c4f16e1c1909dba4145a84902bdfd0fdfa7ff3a1bcd22a4e04e476dfe5d"
+    },
+    {
+      "path": "source/content/lessons/adapt-the-challenge.json",
+      "size_bytes": 4300,
+      "sha256": "1d65a61077d19d6bd791690672e41b3b54771d7cbb258f551086fd86f5f26c12"
+    },
+    {
+      "path": "source/content/lessons/build-a-session.json",
+      "size_bytes": 4473,
+      "sha256": "db7e221e454fea42634b3e5a0ec60f61c7af53a4e6992a425010b809448d2347"
+    },
+    {
+      "path": "source/content/lessons/enter-their-world.json",
+      "size_bytes": 4290,
+      "sha256": "7e384a29b302371faa6fd04b011eeb6a0b897d07cf4d353e903c94050bb1764a"
+    },
+    {
+      "path": "source/content/lessons/mentoring-after.json",
+      "size_bytes": 3121,
+      "sha256": "cc7355e9b33e50d3e8a498fec6366870883399038a68b8bf3f04b2bbc2629eaa"
+    },
+    {
+      "path": "source/content/lessons/mentoring-before.json",
+      "size_bytes": 3271,
+      "sha256": "a5bd86e0416ad65897eb6c70c90f7adaca1a2cd134a0ab8e6d624d02b9d29335"
+    },
+    {
+      "path": "source/content/lessons/mentoring-games.json",
+      "size_bytes": 4561,
+      "sha256": "96556dcd5b81704661d59c6577921dc6c02ee81a2e46659923a0703fadc9373c"
+    },
+    {
+      "path": "source/content/lessons/mentoring-methods.json",
+      "size_bytes": 3381,
+      "sha256": "309772217fee36c0c2cfd458b1c52e2885e161c38e52dd5574d13dfcb388fbf3"
+    },
+    {
+      "path": "source/content/lessons/mentoring-practice.json",
+      "size_bytes": 3707,
+      "sha256": "c7d327b5deb3abb6e580e5d5c3aed63389ea028c51006cd289923074c8f3a533"
+    },
+    {
+      "path": "source/content/lessons/mentoring-records.json",
+      "size_bytes": 4187,
+      "sha256": "6db35f03c5ccab5c1ce59fa248968b732afde2d4658d267b19113b696788eafd"
+    },
+    {
+      "path": "source/content/lessons/mentoring-research.json",
+      "size_bytes": 4400,
+      "sha256": "b73bc5eda8267d1d1f63d3677f4318764f6ac2f59048a7bcd339e496ad05b8f5"
+    },
+    {
+      "path": "source/content/lessons/reflect-and-develop.json",
+      "size_bytes": 4449,
+      "sha256": "47d64c1a174f613a694e65266bce64f068e44de3a9d0d7c8f8b0a7a60c1677c1"
+    },
+    {
+      "path": "source/content/lessons/volunteer-assist.json",
+      "size_bytes": 4567,
+      "sha256": "0bd400d401e089c8495ce51d7943456af9c471fab9195e14f0e5bf3a888625b9"
+    },
+    {
+      "path": "source/content/lessons/why-we-coach.json",
+      "size_bytes": 4379,
+      "sha256": "2b4ef83c12319d8217e89b06cd8454a898195750d544672049131309bada93be"
+    },
+    {
+      "path": "source/content/media/child-centric.jpg",
+      "size_bytes": 142032,
+      "sha256": "4cf73ddc71245adf38602cd4cdf30c20fc60b5f28487055ac83cfc83a7c57598"
+    },
+    {
+      "path": "source/content/media/environment.jpg",
+      "size_bytes": 134697,
+      "sha256": "79659f42df48cb7487e0096e8e71d73b6ce3a784c642fb97d624fd5c6691cb5a"
+    },
+    {
+      "path": "source/content/media/reflection.jpg",
+      "size_bytes": 144225,
+      "sha256": "013a7b4a7e930e7a9cec587f62d4e6463fca1ce7be1af004649ce4b69863eb2e"
+    },
+    {
+      "path": "source/content/media/session.jpg",
+      "size_bytes": 107943,
+      "sha256": "d1e7097177affc9e108c7c48cf44e5bd7d818e11a5490a378568ec3dcae0340b"
+    },
+    {
+      "path": "source/content/media/sharks.jpg",
+      "size_bytes": 154019,
+      "sha256": "ba83393f5e82bb17dc5cb5f85d177404806df51649799226419f7e43252aa9cb"
+    },
+    {
+      "path": "source/content/media/spectrum.jpg",
+      "size_bytes": 182410,
+      "sha256": "d93dbcff3bb490411aabd77dcf50c115f9a4ebfc78e61a7ba21856b757a3ccd0"
+    },
+    {
+      "path": "source/content/resources/build-up.json",
+      "size_bytes": 1157,
+      "sha256": "dea4cf80551eb8137c164050ff21dd504f575bb86ce4eb2ab25e39be967cbace"
+    },
+    {
+      "path": "source/content/resources/cops-robbers.json",
+      "size_bytes": 1225,
+      "sha256": "d669bbcae9db413974b088aba0c4692bebf84065bd4120ec1700792c68d0b469"
+    },
+    {
+      "path": "source/content/resources/decisions.json",
+      "size_bytes": 1248,
+      "sha256": "29b8f0e440708241f6fe48c252dda91f1a579816c33e271f7cb16c8d782752ac"
+    },
+    {
+      "path": "source/content/resources/goalie-wars.json",
+      "size_bytes": 1317,
+      "sha256": "cdb21d152a70f26c5a28ff752406e85a8a5e2b52c71519d5033e7c718ffda05a"
+    },
+    {
+      "path": "source/content/resources/hide-seek.json",
+      "size_bytes": 1105,
+      "sha256": "76bd4cff384b04271c164cffb433248c74ebb841798f7bf327b16765b7966ab2"
+    },
+    {
+      "path": "source/content/resources/home-away.json",
+      "size_bytes": 1088,
+      "sha256": "23d3601a58634914bee976bed80f9be0202283f40b282b03f55adf4f92a89c54"
+    },
+    {
+      "path": "source/content/resources/nano-1v1.json",
+      "size_bytes": 1133,
+      "sha256": "ac3c51bf843c25c37ddd7bdd2d460d2a71237c98d12e1835711e0eb9ad9fc7bf"
+    },
+    {
+      "path": "source/content/resources/piggy-middle.json",
+      "size_bytes": 1299,
+      "sha256": "c7096752a6df1f2e1a4eeef1d2f4d979eaf62e5f8ed406d51d84dace5c1b70d4"
+    },
+    {
+      "path": "source/content/resources/risky-business.json",
+      "size_bytes": 1206,
+      "sha256": "9014075598423a12b8da7fa9ed8c7fb785c4c5078b9615fec192c62e9e92f176"
+    },
+    {
+      "path": "source/content/resources/rondo-4v2.json",
+      "size_bytes": 1207,
+      "sha256": "2ea8e6a8e49a9583e49b42ec68a4b7af1d97a4583a8024ce2d5f3ffdcceae1d4"
+    },
+    {
+      "path": "source/content/resources/rondo-switch.json",
+      "size_bytes": 1163,
+      "sha256": "8143e8ea54bb095363e4093582c7c44667aa549b3854c738990a4937ee925532"
+    },
+    {
+      "path": "source/content/resources/score-move.json",
+      "size_bytes": 1177,
+      "sha256": "e6a9b07e2f49df6f1a3ce6fc2081177d45021735ff3ce95e6b9ae15e16d131b9"
+    },
+    {
+      "path": "source/content/resources/sharks-surfers.json",
+      "size_bytes": 1270,
+      "sha256": "27f552fd375cfce055006a6f953fbd0fbc379e30cec8b78776113340369aeb31"
+    },
+    {
+      "path": "source/content/resources/soccer-tag.json",
+      "size_bytes": 1156,
+      "sha256": "cb8455bf7201ebb301747c19871ed365e3fd4eaf6a671d652a57a0c4682a2911"
+    },
+    {
+      "path": "source/content/resources/three-team-rondo.json",
+      "size_bytes": 1202,
+      "sha256": "59761cc4f6fe07a964de34a968e4764c00596643b0bac5797f13b8e33173c1bd"
+    },
+    {
+      "path": "source/content/resources/waves.json",
+      "size_bytes": 1253,
+      "sha256": "fcbd5d9b0f0cd7abf43c13d33879aa700eeb9da111b7e03ab59837a827537a91"
+    },
+    {
+      "path": "source/content-notes.md",
+      "size_bytes": 4297,
+      "sha256": "bc359a57319bb55e6da44215bc7ad909dce839ab0f25096a132ee51c7879f2d0"
+    },
+    {
+      "path": "source/preview.html",
+      "size_bytes": 601,
+      "sha256": "ec73f9e9a9ed52817900c9dcdcdade97dde5814530a9aacfad8dbe0d7aca179b"
+    },
+    {
+      "path": "source/start-preview.py",
+      "size_bytes": 788,
+      "sha256": "b78cfeeebd7cc549437f0aba60a837fdde94add89b6871dbcc7c0dddb7384173"
+    },
+    {
+      "path": "tests/MENTORING-VERIFICATION.md",
+      "size_bytes": 4052,
+      "sha256": "66007a28a72b110913ec892ee096f42fc2a8fc1fed5e339945dbea74c1c7f4ef"
+    },
+    {
+      "path": "tests/VERIFICATION.md",
+      "size_bytes": 4245,
+      "sha256": "a0a13625e9d962f2cf114a01b8b8a96953c59e207209c3cf5f2bb8f7d1242dc1"
+    },
+    {
+      "path": "tests/all-integration.php",
+      "size_bytes": 154,
+      "sha256": "e53f50dbc89baafbdc892a4f7b5e77699cde28ad50e2c5bb4275dc271dbda8e4"
+    },
+    {
+      "path": "tests/claude-review-integration.php",
+      "size_bytes": 6921,
+      "sha256": "947d733809e18b86bf72c29434d4e214f72f46e2d77a9045c657562f832952f3"
+    },
+    {
+      "path": "tests/foundation-baseline.json",
+      "size_bytes": 33498,
+      "sha256": "4334090ded5e23c1b0fe73527a0c7343bb3edb9ef7dd83714ab520b00d5bd8da"
+    },
+    {
+      "path": "tests/loading-browser.cjs",
+      "size_bytes": 7393,
+      "sha256": "d31b000481cc46d0bb0a1e1f362af17a215f5ba287ba6d50d53feebc3c20fe06"
+    },
+    {
+      "path": "tests/mentoring-browser.cjs",
+      "size_bytes": 10350,
+      "sha256": "060567dc2a292188ed79b8b7d54ef62d35d634c51b41cbc9b943e38b61db3a60"
+    },
+    {
+      "path": "tests/mentoring-build.py",
+      "size_bytes": 3006,
+      "sha256": "986e98a0a64868c24e34348ee047ed2ea07aafb1b343530f0a4a2e48856eb4bb"
+    },
+    {
+      "path": "tests/mentoring-integration.php",
+      "size_bytes": 10529,
+      "sha256": "69fac1836ad349904fdbab6937f3926336f05523772b5a1d68364840ae1a4a0c"
+    },
+    {
+      "path": "tests/php-lint.mjs",
+      "size_bytes": 1425,
+      "sha256": "78c13136d670e70604e516f7db29248f361f7e0a2c392f4fb12f988fb3fb0c3c"
+    },
+    {
+      "path": "tests/preview-blueprint.json",
+      "size_bytes": 420,
+      "sha256": "3fd41b3067ef33a2f1851269c30753aafabf43164ac47c527c6113369161cf16"
+    },
+    {
+      "path": "tests/run-isolated.mjs",
+      "size_bytes": 3266,
+      "sha256": "8470e59068970415fa68495e7ca3497c16b5d629fdb48323847bdb1af01c465a"
+    },
+    {
+      "path": "tests/runtime/package.json",
+      "size_bytes": 65,
+      "sha256": "67c522a39491a2e333db2102dac00f9e7390bc3aba65c09c5a9f7db75e0ba2c9"
+    },
+    {
+      "path": "tests/wordpress-integration.php",
+      "size_bytes": 12264,
+      "sha256": "ee819650352329d52ca3591afb22c6153777866988a649da9c6eec426f341893"
+    }
+  ]
+}

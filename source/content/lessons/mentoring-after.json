@@ -1,0 +1,66 @@
+{
+  "id": "mentoring-after",
+  "title": "After the visit and into the next session",
+  "minutes": 3,
+  "summary": "Agree one next action and check what happened.",
+  "mediaIds": [],
+  "sections": [
+    {
+      "heading": "Your outcome",
+      "html": "<p>Agree one next action and check what happened.</p><p>Estimated reading time; check at your own pace. This is developmental support, separate from qualifications and formal assessment.</p>"
+    },
+    {
+      "heading": "Let the coach speak first",
+      "html": "<p>Ask what worked, what the children did and what the coach would change. Add one specific strength and one useful factual observation. Keep feedback private and about behaviour, not personality. The coach chooses one achievable next action.</p>"
+    },
+    {
+      "heading": "Close the loop",
+      "html": "<p>Link one relevant activity or lesson and agree a follow-up owner/date. Ask whether the action was tried and what happened. “Not yet” and “It did not help” are valid responses. Decide whether to retry, adapt or close with a reason; do not manufacture success.</p>"
+    },
+    {
+      "heading": "Protect supervision",
+      "html": "<p>A debrief waits until supervision and safe handover are complete. If time is short, agree a later adult conversation. A short practice visit and whole-match support require different time allocations; agree capacity instead of promising overlapping coverage.</p>"
+    },
+    {
+      "heading": "Optional mentor guidance",
+      "html": "<p>At the next visit, revisit the previous action before introducing a new topic. Compare the same adult behaviour and a relevant sign of player experience. One positive observation is a starting point for enquiry, not proof of lasting learning.</p>"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "mentoring-after-1",
+      "prompt": "You noticed five possible improvements. What next?",
+      "options": [
+        "Set five compulsory actions.",
+        "Agree one useful action with the coach.",
+        "Avoid mentioning a strength."
+      ],
+      "correct": 1,
+      "explanation": "Prioritising makes the next attempt manageable."
+    },
+    {
+      "id": "mentoring-after-2",
+      "prompt": "Children still need supervision after the game. When should you debrief?",
+      "options": [
+        "Immediately, leaving them to manage themselves.",
+        "Publicly while parents wait.",
+        "After safe handover, or at an agreed later time."
+      ],
+      "correct": 2,
+      "explanation": "Do not abandon supervision for an adult conversation."
+    },
+    {
+      "id": "mentoring-after-3",
+      "prompt": "A follow-up is due. What should you ask first?",
+      "options": [
+        "Was the previous action tried, and what happened?",
+        "Which new topic can replace the old one?",
+        "Did the team win?"
+      ],
+      "correct": 0,
+      "explanation": "Check the agreed experiment before adding another demand."
+    }
+  ],
+  "takeaway": "Agree one action, one resource, an owner and a next check.",
+  "sourceRefs": []
+}

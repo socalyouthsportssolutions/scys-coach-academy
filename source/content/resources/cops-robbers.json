@@ -1,0 +1,39 @@
+{
+  "id": "cops-robbers",
+  "title": "Cops & Robbers",
+  "ages": [
+    "U8",
+    "U10"
+  ],
+  "themes": [
+    "dribbling",
+    "evasion",
+    "stealing"
+  ],
+  "minutes": "3–4 minute rounds (source)",
+  "players": "4 teams: 3 robber teams and 1 cop team (source)",
+  "equipment": "Proposed: balls, cones, four colours of pinnies.",
+  "setup": "Mark a central bank and team hideouts. Agree safe tagging.",
+  "instructions": [
+    "Robbers evade cops, collect a bank ball and return to their hideout.",
+    "Cops tag robbers before they reach the bank.",
+    "The source sends tagged players home to count ten. The proposed support option changes this to protect involvement."
+  ],
+  "support": [
+    "Proposed option: Replace waiting with an immediate fresh start from the hideout; proposed change to source."
+  ],
+  "challenge": [
+    "Proposed option: Cops may steal a ball and return it to the bank (source progression); keep all children able to rejoin."
+  ],
+  "observe": [
+    "Can the child spot a route before entering?",
+    "Are children repeatedly waiting?"
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "guide-8",
+      "page": 34
+    }
+  ],
+  "adaptationsProposed": true
+}

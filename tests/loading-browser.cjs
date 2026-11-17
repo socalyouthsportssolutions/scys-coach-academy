@@ -1,0 +1,43 @@
+/* Network-observed, on-demand content and brand regression checks. */
+const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict'),{createRequire}=require('node:module');
+const req=createRequire(process.env.SCYS_PLAYWRIGHT||path.resolve(process.env.SCYS_TEST_RUNTIME||path.join(__dirname,'runtime'),'package.json'));
+const {chromium}=req('playwright');const root=path.resolve(__dirname,'../preview'),out=path.resolve(__dirname,'../releases');fs.mkdirSync(out,{recursive:true});
+const results=[];function check(value,label){assert(value,label);results.push(label);console.log('PASS: '+label);}
+const server=http.createServer((request,response)=>{const file=path.resolve(root,'.'+(request.url==='/'?'/index.html':decodeURIComponent(request.url.split('?')[0])));if(!file.startsWith(root+path.sep)){response.writeHead(403);return response.end();}try{response.setHeader('Content-Type',file.endsWith('.js')?'application/javascript':file.endsWith('.json')?'application/json':file.endsWith('.css')?'text/css':file.endsWith('.html')?'text/html':'image/jpeg');response.end(fs.readFileSync(file));}catch{response.writeHead(404);response.end();}});
+(async()=>{await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const origin='http://127.0.0.1:'+server.address().port;const browser=await chromium.launch({headless:true,...(process.env.SCYS_BROWSER_EXECUTABLE?{executablePath:process.env.SCYS_BROWSER_EXECUTABLE}:{})});
+try{const page=await browser.newPage({viewport:{width:1280,height:900}}),requests=[],errors=[];page.on('request',r=>requests.push(new URL(r.url())));page.on('pageerror',e=>errors.push(e.message));
+const bodies=()=>requests.filter(u=>/\/content\/(lessons|resources)\//.test(u.pathname)).map(u=>u.pathname);
+const media=()=>requests.filter(u=>/\/content\/media\//.test(u.pathname)).map(u=>u.pathname);
+await page.goto(origin);await page.getByRole('button',{name:'My learning',exact:true}).waitFor();await page.waitForTimeout(200);
+check(bodies().length===0&&media().length===0,'Startup requests zero lesson bodies, activity bodies or diagrams');
+check(requests.some(u=>u.pathname==='/brand.css'),'The preview loads the separate brand stylesheet');
+check(requests.every(u=>u.origin===origin),'Preview makes no third-party font, image or service requests');
+const catalogue=JSON.parse(fs.readFileSync(path.join(root,'catalogue.json'),'utf8'));
+check(catalogue.sources.every(s=>!('file' in s))&&!/"(?:sections|quiz|correct|explanation|visits)"|data:image\//.test(JSON.stringify(catalogue)),'Startup manifest has metadata only, without bodies, quizzes, keys or private notes');
+await page.getByRole('button',{name:'My learning',exact:true}).click();await page.locator('[data-action="course"][data-id="coach-mentoring"]').click();await page.locator('[data-action="category"][data-id="coach-mentoring"]').click();
+check(bodies().length===0&&media().length===0,'Opening course and category headings does not prefetch their lesson bodies');
+await page.locator('[data-action="lesson"][data-id="mentoring-research"]').click();await page.getByRole('heading',{name:'What the research tells us',exact:true}).waitFor();await page.waitForTimeout(200);
+check(JSON.stringify(bodies())===JSON.stringify(['/content/lessons/mentoring-research.json']),'Opening one mentoring lesson loads exactly that independent lesson block');
+await page.getByRole('button',{name:'My learning',exact:true}).click();await page.locator('[data-action="course"][data-id="coach-mentoring"]').click();await page.locator('[data-action="category"][data-id="coach-mentoring"]').click();await page.locator('[data-action="lesson"][data-id="mentoring-research"]').click();await page.getByRole('heading',{name:'What the research tells us',exact:true}).waitFor();
+check(bodies().filter(p=>p.includes('mentoring-research')).length===1,'Reopening an already opened lesson reuses its same-page cache');
+await page.getByRole('button',{name:'Dashboard',exact:true}).click();await page.locator('[data-action="lesson"][data-id="why-we-coach"]').first().click();await page.getByRole('heading',{name:'Why we coach',exact:true}).waitFor();await page.locator('.hub-figure img').first().waitFor();
+const lesson=JSON.parse(fs.readFileSync(path.join(root,'content/lessons/why-we-coach.json'),'utf8'));
+const allowed=lesson.mediaIds.map(id=>'/content/media/'+catalogue.media.find(m=>m.id===id).file);
+check(media().length===allowed.length&&media().every(p=>allowed.includes(p)),'Opening an illustrated lesson loads only its declared original diagrams');
+check(bodies().length===2,'The other eleven lesson bodies remain unopened and unfetched');
+await page.getByRole('button',{name:'Session library',exact:true}).click();await page.locator('[data-action="resource"][data-id="hide-seek"]').waitFor();
+check(!bodies().some(p=>p.includes('/resources/')),'Opening the activity library loads summaries without activity instruction bodies');
+await page.locator('[data-action="resource"][data-id="hide-seek"]').click();await page.getByRole('heading',{name:'Hide & Seek',exact:true}).waitFor();await page.waitForTimeout(200);
+check(bodies().filter(p=>p.includes('/resources/')).join('')==='/content/resources/hide-seek.json','Opening one activity loads only that activity block');
+await page.getByRole('button',{name:'My mentoring',exact:true}).click();await page.getByRole('button',{name:'New request',exact:true}).click();await page.getByLabel('Current season / team',{exact:true}).fill('Synthetic design check');
+const initialColours=await page.locator('.hub-button-primary').first().evaluate(e=>({bg:getComputedStyle(e).backgroundColor,color:getComputedStyle(e).color}));
+const field=await page.locator('input[name="seasonTeam"]').evaluate(e=>({height:e.getBoundingClientRect().height,border:getComputedStyle(e).borderTopColor,padding:parseFloat(getComputedStyle(e).paddingLeft)}));
+check(initialColours.bg==='rgb(255, 246, 25)'&&initialColours.color==='rgb(15, 42, 47)'&&field.height>=44&&field.border==='rgb(125, 139, 141)'&&field.padding>=12,'Primary action uses yellow/dark ink; text fields have 44px targets, padding and contrasting borders');
+await page.locator('input[name="seasonTeam"]').focus?.();
+await page.setViewportSize({width:320,height:780});check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Branded app has no document overflow at 320px; navigation scrolls internally');
+await page.emulateMedia({reducedMotion:'reduce'});check(await page.locator('.hub-button').first().evaluate(e=>getComputedStyle(e).transitionDuration.split(',').every(x=>parseFloat(x)===0)),'Reduced-motion preference disables brand transitions');
+await page.screenshot({path:path.join(out,'claude-brand-mobile.png'),fullPage:false});
+await page.setViewportSize({width:1280,height:900});page.once('dialog',d=>d.accept());await page.getByRole('button',{name:'Dashboard',exact:true}).click();await page.screenshot({path:path.join(out,'claude-brand-dashboard.png'),fullPage:false});
+check(errors.length===0,'Branded lazy-loading journey completes without browser script errors');
+}finally{await browser.close();server.close();fs.writeFileSync(path.join(out,'loading-browser-results.json'),JSON.stringify({checks:results.length,passed:results},null,2));}
+})().catch(error=>{console.error(error);server.close();process.exitCode=1;});

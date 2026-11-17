@@ -1,0 +1,10 @@
+/preview/
+/dist/
+/releases/
+/Coach Academy Preview.html
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*

@@ -1,0 +1,6 @@
+<?php
+defined( 'ABSPATH' ) || exit;
+return json_decode( <<<'SCYS_JSON'
+{"id":"decisions","title":"Decisions, Decisions","ages":["U10","U12","U14"],"themes":["passing","finishing","decisions"],"minutes":"5 balls each (source); duration unspecified","players":"2 teams; 2v1 or 3v1 attacks (source)","equipment":"5 balls per team; proposed goals, cones, pinnies.","setup":"Two fields back-to-back: midfield section 10–15 yards long, final section 5–8 yards, width 15–20 yards (source). Adjust to site and children.","instructions":["Each team starts five balls at halfway.","Two or three attackers face one defender.","Goal, ball out or keeper control ends a ball.","When either team finishes its fifth ball, stop and compare goals."],"support":["Proposed option: Remove the race element initially so children can understand choices."],"challenge":["Proposed option: Allow a defender counterattack (source progression)."],"observe":["Does restart speed leave time to decide?","Does ball carrier notice defender and teammate?"],"sourceRefs":[{"sourceId":"guide-8","page":40}],"adaptationsProposed":true}
+SCYS_JSON
+, true, 512, JSON_THROW_ON_ERROR );

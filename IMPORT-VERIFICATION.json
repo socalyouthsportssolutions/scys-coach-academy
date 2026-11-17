@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-17",
+  "scope": "Repository import of the supplied v0.3.1 review candidate; no deployment or feature changes.",
+  "checks": {
+    "archive_crc": "passed",
+    "archive_sha256_manifest": {
+      "status": "passed",
+      "files": 183
+    },
+    "original_source_and_review_bytes": {
+      "status": "passed",
+      "files": 113
+    },
+    "build": "passed in a separate validation copy; generated PHP differs from the supplied PHP by line endings only",
+    "mentoring_build_and_preservation_tests": "passed",
+    "javascript_syntax": {
+      "status": "passed",
+      "files": 6
+    },
+    "php_syntax": {
+      "status": "passed",
+      "php": "8.3.36",
+      "files": 41,
+      "errors": []
+    },
+    "common_credential_pattern_scan": "no findings",
+    "isolated_wordpress_integration": {
+      "status": "blocked before execution",
+      "reason": "Official WordPress 6.9.11 release download unavailable: DNS error via Node; network proxy returned HTTP 403 via Python."
+    }
+  },
+  "deployment": "not performed",
+  "target_repository": "socalyouthsportssolutions/scys-coach-academy",
+  "publication": "pending repository creation or connection access"
+}

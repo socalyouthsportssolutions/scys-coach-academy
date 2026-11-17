@@ -1,0 +1,41 @@
+{
+  "id": "waves",
+  "title": "Waves",
+  "ages": [
+    "U10",
+    "U12",
+    "U14"
+  ],
+  "themes": [
+    "transition",
+    "attacking",
+    "defending"
+  ],
+  "minutes": "5–6 minute team turns (source)",
+  "players": "3 teams; 2–3 attackers versus 1 defender at a time (source)",
+  "equipment": "Proposed: balls, goals, cones, three colours of pinnies.",
+  "setup": "Two fields back-to-back: source suggests 10–15 yard midfield sections, 5–8 yard final sections, 15–20 yard width.",
+  "instructions": [
+    "Two teams alternate attacks; third defends. Coach serves ball.",
+    "On goal, ball out or foul, defender moves to next field as coach serves other attack.",
+    "Change defenders every 3–4 turns; defending teams every 5–6 minutes.",
+    "Defenders receive double points."
+  ],
+  "support": [
+    "Proposed option: Allow recovery before the defender’s next turn."
+  ],
+  "challenge": [
+    "Proposed option: Change to 2v2 or 3v2 if suitable (source progression)."
+  ],
+  "observe": [
+    "Can defender reorient before next attack?",
+    "Are waiting attackers involved?"
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "guide-8",
+      "page": 43
+    }
+  ],
+  "adaptationsProposed": true
+}

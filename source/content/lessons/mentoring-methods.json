@@ -1,0 +1,66 @@
+{
+  "id": "mentoring-methods",
+  "title": "Choosing a mentoring method",
+  "minutes": 4,
+  "summary": "Choose support that fits the coach and return ownership.",
+  "mediaIds": [],
+  "sections": [
+    {
+      "heading": "Your outcome",
+      "html": "<p>Choose support that fits the coach and return ownership.</p><p>Estimated reading time; check at your own pace. This is developmental support, separate from qualifications and formal assessment.</p>"
+    },
+    {
+      "heading": "Four practical options",
+      "html": "<p>Ask and reflect: help the coach compare options. Observe and feed back: describe specific events rather than personality. Demonstrate and hand back: show one brief agreed example, then the coach tries. Plan or coach together: share a defined task and agree when the coach resumes it.</p>"
+    },
+    {
+      "heading": "Make a simple agreement",
+      "html": "<p>Use “Watch me”, “Show me” or “Work with me”. Agree the purpose and hand-back point. A beginner who cannot picture a game may need a demonstration; questions alone can frustrate them. An experienced coach may want to test alternatives rather than receive a running commentary.</p>"
+    },
+    {
+      "heading": "Illustrative volunteer example: engagement",
+      "html": "<p>A volunteer notices long waits. Agree to shorten the explanation and run two smaller games. Observe waiting in the same short window before and afterwards. Hand the organisation back to the volunteer. A busier session is not, by itself, proof of retained learning; ask about involvement and revisit the setup.</p>"
+    },
+    {
+      "heading": "Optional mentor guidance",
+      "html": "<p>Ask permission before changing methods. “Would a short example help?” Explain what you will show, keep it brief and invite the coach’s own attempt immediately. Do not take over the entire practice by default.</p>"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "mentoring-methods-1",
+      "prompt": "A beginner cannot picture the activity. What fits?",
+      "options": [
+        "Keep asking increasingly abstract questions.",
+        "Demonstrate briefly, then let the coach try immediately.",
+        "Take the whole session."
+      ],
+      "correct": 1,
+      "explanation": "A short model can help a beginner if ownership returns quickly."
+    },
+    {
+      "id": "mentoring-methods-2",
+      "prompt": "An experienced coach has two possible adaptations. What fits?",
+      "options": [
+        "Ask what each might change and test one.",
+        "Choose for them without discussion.",
+        "Avoid observing because they are experienced."
+      ],
+      "correct": 0,
+      "explanation": "Support the coach’s judgement and compare observations."
+    },
+    {
+      "id": "mentoring-methods-3",
+      "prompt": "The mentor proposes leading the whole practice. What must happen?",
+      "options": [
+        "Assume mentoring transfers all responsibility.",
+        "Remove the coach from all decisions.",
+        "Agree a useful purpose, responsibilities and a hand-back point."
+      ],
+      "correct": 2,
+      "explanation": "Shared coaching needs an explicit agreement; mentoring should build ownership."
+    }
+  ],
+  "takeaway": "Agree Watch me, Show me or Work with me, including when ownership returns.",
+  "sourceRefs": []
+}

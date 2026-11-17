@@ -1,0 +1,41 @@
+{
+  "id": "score-move",
+  "title": "Score & Move",
+  "ages": [
+    "U10",
+    "U12",
+    "U14"
+  ],
+  "themes": [
+    "changing-numbers",
+    "transition",
+    "teamwork"
+  ],
+  "minutes": "Not specified; proposed short rounds agreed with coach",
+  "players": "2 teams over 2 fields; e.g. 2v2 or 3v3 per field (source)",
+  "equipment": "Proposed: two balls, goals, cones, pinnies.",
+  "setup": "Two adjacent fields, clear safe transfer route. Dimensions unspecified.",
+  "instructions": [
+    "Play on both fields with dribble-ins.",
+    "After scoring, scorer moves to other field.",
+    "Respond to having more or fewer teammates.",
+    "Add both field scores for each team."
+  ],
+  "support": [
+    "Proposed option: Show a player where to move after scoring; proposed support."
+  ],
+  "challenge": [
+    "Proposed option: Ask ready player when to keep or share ball with extra player."
+  ],
+  "observe": [
+    "Does child notice changing numbers?",
+    "Can children transfer without crossing active play unsafely?"
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "guide-2",
+      "page": 63
+    }
+  ],
+  "adaptationsProposed": true
+}

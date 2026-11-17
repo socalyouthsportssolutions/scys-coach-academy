@@ -1,0 +1,88 @@
+{
+  "id": "build-a-session",
+  "title": "Build a session around the child",
+  "minutes": 6,
+  "tracks": [
+    "coach"
+  ],
+  "summary": "Connect a simple opening game, a purposeful progression and a whole game.",
+  "sections": [
+    {
+      "heading": "Start at the end",
+      "html": "<p>Plan a session that gives each child a way into the game. The guide suggests setting up with the finish in mind: use a field that can serve the opening activity, progression and final game. This can reduce repeated cone changes and leave you free to watch the children.</p><p>Begin with the people, space and equipment actually available. Check the playing surface, boundaries and goals with your lead coach before children enter. Choose one simple purpose, such as noticing space while keeping the ball, rather than delivering every coaching point in one session.</p>"
+    },
+    {
+      "heading": "Make the opening playable",
+      "html": "<p>The session structure offers a simple technical game or warm-up, a progression, and a whole game. In Sharks &amp; Surfers, children can begin with a ball, a direction and a clear aim. Explain where to play and how to score, show one example if helpful, and let them start.</p><p>Watch who understands the start, who gets involved and who is still waiting. A short demonstration or individual welcome may be more useful than another long explanation to everyone. Check the experience of the least involved child as carefully as the most visible player.</p>"
+    },
+    {
+      "heading": "Progress for a reason",
+      "html": "<p>Use the next phase to pose an appropriate new problem. You might ask an experienced surfer to find a shooting opportunity from the ocean, while giving another child more time at a restart. Say what decision you want to invite and observe the response. The guide's ‘soup’ metaphor reminds us that technical, tactical, physical and social experiences can exist together in a game.</p><p>The sequence is a planning aid, not a requirement to progress when children are not ready. Repeat a useful game or simplify it when that better serves the group.</p>"
+    },
+    {
+      "heading": "Return to the game and listen",
+      "html": "<p>Finish with an appropriate small game and notice whether children explore the earlier idea when opponents and teammates create new situations. Leave room for their own solutions. Include water and rest according to conditions and current programme procedures; old guide timetables are not a current schedule. Close with one child-friendly question and one observation to discuss with your mentor.</p>"
+    }
+  ],
+  "mediaIds": [
+    "session"
+  ],
+  "quiz": [
+    {
+      "id": "build-a-session-1",
+      "prompt": "You have limited setup time. Which choice follows the guide?",
+      "options": [
+        "Build a new field for every activity.",
+        "Set up a field that serves the opening and final game.",
+        "Delay play for a complex diagram."
+      ],
+      "correct": 1,
+      "explanation": "Starting with the finish in mind can reduce transitions. Check that the setup suits the children."
+    },
+    {
+      "id": "build-a-session-2",
+      "prompt": "Your planned progression confuses several children. What next?",
+      "options": [
+        "Simplify or repeat the starting game and check understanding.",
+        "Progress because it is on the plan.",
+        "Add more rules."
+      ],
+      "correct": 0,
+      "explanation": "The plan serves the children. Their response should influence the next phase."
+    },
+    {
+      "id": "build-a-session-3",
+      "prompt": "The final game has many goals but one child seldom participates. Which review is useful?",
+      "options": [
+        "Record only the score.",
+        "Assume everyone learned equally.",
+        "Consider that child’s involvement and a response for next time."
+      ],
+      "correct": 2,
+      "explanation": "A team result does not reveal each child’s experience."
+    }
+  ],
+  "takeaway": "Prepare one connected setup, one purpose and one observation question.",
+  "sourceRefs": [
+    {
+      "sourceId": "guide-2",
+      "page": 26
+    },
+    {
+      "sourceId": "guide-2",
+      "page": 27
+    },
+    {
+      "sourceId": "guide-2",
+      "page": 28
+    },
+    {
+      "sourceId": "guide-2",
+      "page": 29
+    },
+    {
+      "sourceId": "guide-2",
+      "page": 33
+    }
+  ]
+}
